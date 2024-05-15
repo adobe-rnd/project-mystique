@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "checkJs": true,
+      "target": "es2017",
+      "module": "nodenext",
+      "moduleResolution": "nodenext",
+      "resolveJsonModule": true,
+      "paths": {
+        "@Types": ["./src/types/typedefs.js"],
+        "@AppStore": ["./src/store/app.js"],
+        "@RouterStore": ["./src/store/router.js"],
+      }
+    },
+    "exclude": [
+      "node_modules",
+      "dist"
+    ],
+  }
+  

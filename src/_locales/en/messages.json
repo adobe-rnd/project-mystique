@@ -1,0 +1,47 @@
+{
+  "ok": {
+    "message": "OK"
+  },
+  "error": {
+    "message": "Error"
+  },
+  "destructive_confirmation": {
+    "message": "Are you sure you want to $1 this?"
+  },
+  "home-hero-title": {
+    "message": "Generate on-brand webpages with ease"
+  },
+  "home-hero-subtitle": {
+    "message": "With Gen AI implemented across Adobe capabilities it’s now possible to create, refine, publish, and test new web pages with ease."
+  },
+  "brand-content-heading": {
+    "message": "Brand & content inspiration"
+  },
+  "reference-content-heading": {
+    "message": "Reference content"
+  },
+  "content-insights": {
+    "message": "Content insights"
+  },  
+  "create-heading": {
+    "message": "What would you like to create?"
+  },
+  "create-landing-page-title": {
+    "message": "New Landing Page"
+  },
+  "create-landing-page-subtitle": {
+    "message": "Great for new marketing campaigns"
+  },
+  "create-blog-page-title": {
+    "message": "Blog article"
+  },
+  "create-blog-page-subtitle": {
+    "message": "Fantastic for continued brand engagment"
+  },
+  "create-service-page-title": {
+    "message": "Services page"
+  },
+  "create-service-page-subtitle": {
+    "message": "Help visitors learn about what you have to offer"
+  }
+}

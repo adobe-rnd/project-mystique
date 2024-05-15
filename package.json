@@ -1,0 +1,75 @@
+{
+  "name": "Project Mystique",
+  "author": "Adobe",
+  "license": "Apache-2.0",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint --ext .js,.html . --ignore-path .gitignore && prettier \"**/*.js\" --check --ignore-path .gitignore",
+    "format": "eslint --ext .js,.html . --fix --ignore-path .gitignore && prettier \"**/*.js\" --write --ignore-path .gitignore",
+    "test": "web-test-runner --coverage",
+    "test:watch": "web-test-runner --watch",
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "start": "web-dev-server --watch --open"
+  },
+  "dependencies": {
+    "@lit/context": "1.1.1",
+    "@spectrum-web-components/action-button": "0.40.3",
+    "@spectrum-web-components/action-group": "0.40.3",
+    "@spectrum-web-components/base": "0.40.3",
+    "@spectrum-web-components/dialog": "0.40.3",
+    "@spectrum-web-components/icon": "0.40.3",
+    "@spectrum-web-components/icons": "0.40.3",
+    "@spectrum-web-components/icons-ui": "0.40.3",
+    "@spectrum-web-components/icons-workflow": "0.40.3",
+    "@spectrum-web-components/menu": "0.40.3",
+    "@spectrum-web-components/picker": "0.40.3",
+    "@spectrum-web-components/progress-circle": "0.42.3",
+    "@spectrum-web-components/theme": "0.40.3",
+    "@spectrum-web-components/toast": "0.40.3",
+    "@vaadin/router": "1.7.5",
+    "lit": "3.1.2",
+    "mobx": "6.12.0"
+  },
+  "devDependencies": {
+    "@adobe/eslint-config-helix": "2.0.6",
+    "@babel/plugin-proposal-decorators": "7.24.0",
+    "@open-wc/eslint-config": "12.0.3",
+    "@open-wc/testing": "4.0.0",
+    "@rollup/plugin-babel": "6.0.4",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@types/mocha": "10.0.6",
+    "@web/dev-server": "0.4.4",
+    "@web/dev-server-esbuild": "1.0.2",
+    "@web/dev-server-rollup": "0.6.1",
+    "@web/rollup-plugin-html": "2.2.1",
+    "@web/rollup-plugin-import-meta-assets": "2.2.1",
+    "@web/test-runner": "0.18.1",
+    "eslint": "8.57.0",
+    "eslint-plugin-mobx": "0.0.9",
+    "husky": "4.3.8",
+    "lint-staged": "10.5.4",
+    "rimraf": "3.0.2",
+    "rollup": "4.13.0",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-esbuild": "6.1.1",
+    "rollup-plugin-inline-svg": "^3.0.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@open-wc",
+      "prettier"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
+  }
+}
